@@ -23,6 +23,11 @@ body {
     line-height: 1.8;
     font-weight: 400;
     min-height: 100vh;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding-bottom: 30px;
 
 
 }
@@ -191,7 +196,7 @@ section {
     min-height: 100vh;
     position: relative;
     background: rgb(255, 250, 245);
-    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(/bassa/ANGELO_0\ 28.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../bassa/ANGELO_0\ 28.jpg);
     background-size: cover;
     background-attachment: fixed;
     padding-top: 100px;

@@ -17,3 +17,7 @@ $(document).ready(function () {
         });
     })
 })
+ScrollReveal({ reset: true });
+ScrollReveal().reveal('.banner', { easing: "ease-in", delay: 100 });
+ScrollReveal().reveal('.shop', { easing: "ease-in", delay: 100 });
+ScrollReveal().reveal('.about', { easing: "ease-in", delay: 100 });
