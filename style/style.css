@@ -16,6 +16,21 @@
 
 }
 
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    background: rgb(255, 250, 245);
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../bassa/ANGELO_0\ 28.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+    margin: 0px 80px;
+}
+
 body {
     max-width: 100%;
     height: 100vh;
@@ -23,11 +38,6 @@ body {
     line-height: 1.8;
     font-weight: 400;
     min-height: 100vh;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    padding-bottom: 30px;
 
 
 }
@@ -188,20 +198,7 @@ section {
     padding: 100px 0;
 }
 
-.banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-    position: relative;
-    background: rgb(255, 250, 245);
-    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../bassa/ANGELO_0\ 28.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    padding-top: 100px;
-    margin: 0px 80px;
-}
+
 
 .banner .title {
     max-width: 900px;
