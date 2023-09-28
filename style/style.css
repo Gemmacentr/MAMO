@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'Shorelines';
+    src: url(../fonts/Shorelines_Script_Bold.otf);
+}
+
+@font-face {
+    font-family: 'Humswu';
+    src: url(../fonts/humswu.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    max-width: 100%;
+    height: 100vh;
+    font-family: 'Humswu';
+    line-height: 1.8;
+    font-weight: 400;
+    min-height: 100vh;
+
+
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: black 1.5px solid;
+    padding: 20px 60px;
+    font-weight: 700;
+    z-index: 1;
+
+
+
+
+
+}
+
+
+
+.logo {
+    color: rgb(48, 47, 81);
+    font-weight: bold;
+    font-size: 2.5em;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(48, 47, 81);
+    border-radius: 7px;
+    padding: 8px 30px;
+    transition: all .3s ease;
+    font-size: 1.2rem;
+
+
+}
+
+ul li a:hover,
+ul li a:active {
+    color: #21243D;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+#icon {
+    cursor: pointer;
+
+    border-radius: 4px;
+    padding: 5px 7px 3px 7px;
+
+
+    transition: all .3s ease;
+
+}
+
+#icon svg {
+    color: black;
+    height: 28px;
+    transition: all .3s ease;
+
+}
+
+nav .navigation1 {
+    display: none;
+}
+
+nav .hamburger {
+    display: block;
+}
+
+.alert {
+    position: fixed;
+    top: 5%;
+    right: 2%;
+    background: rgb(255, 250, 245);
+    color: #fff;
+    font-weight: 800;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 20px;
+    width: 300px;
+    height: 100vh;
+    border-radius: 10px;
+    transform: translateX(150%);
+    z-index: 3;
+    transition: transform 0.3s ease-in-out;
+}
+
+.alert .navigation1 {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+}
+
+.alert .navigation1 li a {
+    text-decoration: none;
+    color: #57557D;
+}
+
+.alert p {
+    margin: 30px;
+    letter-spacing: 1px;
+}
+
+.alert i {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    cursor: pointer;
+    color: #57557D;
+}
+
+#checkbox,
+#icon {
+    display: none;
+}
+
+
+#icon:hover svg {
+    color: grey;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: none repeat scroll 0 0 #ffffff;
+}
+
+.spinner {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    position: relative;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    background: rgb(255, 250, 245);
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(/bassa/ANGELO_0\ 28.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+    margin: 0px 80px;
+}
+
+.banner .title {
+    max-width: 900px;
+    text-align: left;
+}
+
+.banner .title h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+
+
+
+
+
+
+nav .hamburger {
+    display: none;
+    color: black;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 789px) {
+
+    ul {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #FFD082;
+        left: 0;
+        top: 0;
+        text-align: center;
+        display: none;
+
+    }
+
+    ul li a {
+        display: block;
+        padding: 10px 15px;
+    }
+
+
+
+    nav .navigation {
+        display: none;
+    }
+
+    nav .hamburger {
+        display: block;
+
+    }
+
+
+}
