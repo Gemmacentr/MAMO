@@ -44,4 +44,4 @@ ScrollReveal({ reset: true });
 ScrollReveal().reveal('.banner', { easing: "ease-in", delay: 100 });
 ScrollReveal().reveal('.shop', { easing: "ease-in", delay: 200 });
 ScrollReveal().reveal('.about', { easing: "ease-in", delay: 200 });
-ScrollReveal().reveal('.contact', { easing: "ease-in", delay: 200 });
+ScrollReveal().reveal('.contacts', { easing: "ease-in", delay: 200 });
