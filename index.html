@@ -13,58 +13,93 @@
 </head>
 
 <body>
-    <div class="top">
-        <div class="links">
+    <header>
+        <div class="top">
 
-        </div>
-        <div class="head">
-            MAMO<span>.</span>
-        </div>
-        <div class="search">
+            <div class="head">
+                M<span>.</span>A<span>.</span>MO<span>.</span>
+                HK LTD
+            </div>
+            <div class="search">
 
-            <i class="fa-solid fa-bars on hamburger"></i>
+                <i class="fa-solid fa-bars on hamburger"></i>
+            </div>
         </div>
-    </div>
-    <div class="alert">
-        <ul class="navigation1">
-            <i class='bx bxs-x-circle close'></i>
-            <li><a href="#banner" class="out">HOME</a></li>
-            <li><a href="#shop" class="out">SHOP</a></li>
-            <li><a href="#about" class="out">ABOUT</a></li>
-            <li><a href="#contacts" class="out">CONTACT</a></li>
-        </ul>
-        </i>
-    </div>
+        <div class="alert">
+            <ul class="navigation1">
+                <i class='bx bxs-x-circle close'></i>
+                <li><a href="#banner" class="out">HOME</a></li>
+                <li><a href="#shop" class="out">PRODUCTS</a></li>
+                <li><a href="#about" class="out">ABOUT</a></li>
+                <li><a href="#contacts" class="out">CONTACTS</a></li>
+            </ul>
+            </i>
+        </div>
     </header>
     <!--NAVBAR-->
     <div class="header">
         <ul class="navigation">
             <li><a href="#banner" class="out">HOME</a></li>
-            <li><a href="shop" class="out">SHOP</a></li>
+            <li><a href="shop" class="out">PRODUCTS</a></li>
             <li><a href="#about" class="out">ABOUT</a></li>
-            <li><a href="#contacts" class="out">CONTACT</a></li>
+            <li><a href="#contacts" class="out">CONTACTS</a></li>
         </ul>
     </div>
-    <!--HOME PAGE-->
-    <div class="banner" id="banner">
-        <swiper-container class="mySwiper" navigation="true">
-            <swiper-slide>
-                <div class="imgbx">
-                    <a href="#news"><img src="./bassa/ANGELO_0 7.jpg" alt=""></a>
-                </div>
-                <div class="text">
-                    <h1>NEWS FEEDS</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, minima.</p>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="imgbx">
-                    <a href="#"><img src="./bassa/ANGELO_0 40.jpg" alt=""></a>
-                </div>
-                <div class="text">
-                    <h1>UPCOMING EVENTS</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, minima.</p>
-                </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="./bassa/SLIDER/ANGELO_0-20.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./bassa/SLIDER/ANGELO_0.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./bassa/SLIDER/patches.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="./bassa/SLIDER/transfer_0-1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="./bassa/SLIDER/transfer_0-3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="./bassa/SLIDER/transfer_0-31.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="./bassa/SLIDER/transfer_0-33.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="./bassa/SLIDER/transfer_0-38.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="./bassa/SLIDER/transfer_0-4.jpg" style="width:100%">
+        </div>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+    </div>
+
+    <div id="slider">
+        <div class="slides">
+            <div class="img">
+                <a href="#"><img src="./bassa/ANGELO_0 40.jpg" alt=""></a>
+            </div>
+            <div class="text">
+                <h1>UPCOMING EVENTS</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, minima.</p>
+            </div>
             </swiper-slide>
             <swiper-slide>
                 <div class="imgbx">
@@ -75,17 +110,19 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, minima.</p>
                 </div>
             </swiper-slide>
-        </swiper-container>
+            </swiper-container>
+        </div>
     </div>
     <!--NEWS SECTION-->
+
     <section class="shop" id="shop">
         <div class="titletext">
-            <h1>Shop <span>.</span></h1>
+            <h1>PRODUCTS <span>.</span></h1>
         </div>
         <div class="container">
             <div class="card">
                 <div class="card__header">
-                    <img src="./bassa/ANGELO_0 36.jpg" alt="card__image" class="card__image" width="600">
+                    <img src="./bassa/ALTA/ANGELO_0-20.jpg" alt="card__image" class="card__image" width="600">
                 </div>
                 <div class="card__body">
                     <span class="tag">News</span>
@@ -93,11 +130,20 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
                         doloribus. Doloremque, nihil! At ea atque quidem!</p>
                 </div>
+                <button onclick="togglePopup()">Scopri di più</button>
+
+                <!-- Contenuto del pop-up -->
+                <div class="popup" id="popup">
+                    <div class="popup-content">
+                        Contenuto del pop-up
+                        <button onclick="togglePopup()">Chiudi</button>
+                    </div>
+                </div>
 
             </div>
             <div class="card">
                 <div class="card__header">
-                    <img src="./bassa/ANGELO_0 24.jpg" alt="card__image" class="card__image" width="600">
+                    <img src="./bassa/ALTA/ANGELO_0-3.jpg" alt="card__image" class="card__image" width="600">
                 </div>
                 <div class="card__body">
                     <span class="tag">News</span>
@@ -105,11 +151,20 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
                         doloribus. Doloremque, nihil! At ea atque quidem!</p>
                 </div>
+                <button onclick="togglePopup()">Scopri di più</button>
+
+                <!-- Contenuto del pop-up -->
+                <div class="popup" id="popup">
+                    <div class="popup-content">
+                        Contenuto del pop-up
+                        <button onclick="togglePopup()">Chiudi</button>
+                    </div>
+                </div>
 
             </div>
             <div class="card">
                 <div class="card__header">
-                    <img src="./bassa/ANGELO_0 25.jpg" alt="card__image" class="card__image" width="600">
+                    <img src="./bassa/ALTA/ANGELO_0-40.jpg" alt="card__image" class="card__image" width="600">
                 </div>
                 <div class="card__body">
                     <span class="tag">News</span>
@@ -117,11 +172,20 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
                         doloribus. Doloremque, nihil! At ea atque quidem!</p>
                 </div>
+                <button onclick="togglePopup()">Scopri di più</button>
+
+                <!-- Contenuto del pop-up -->
+                <div class="popup" id="popup">
+                    <div class="popup-content">
+                        Contenuto del pop-up
+                        <button onclick="togglePopup()">Chiudi</button>
+                    </div>
+                </div>
 
             </div>
             <div class="card">
                 <div class="card__header">
-                    <img src="./bassa/ANGELO_0 7.jpg" alt="card__image" class="card__image" width="600">
+                    <img src="./bassa/ALTA/ANGELO_0-40.jpg" alt="card__image" class="card__image" width="600">
                 </div>
                 <div class="card__body">
                     <span class="tag">News</span>
@@ -129,11 +193,20 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
                         doloribus. Doloremque, nihil! At ea atque quidem!</p>
                 </div>
+                <button onclick="togglePopup()">Scopri di più</button>
+
+                <!-- Contenuto del pop-up -->
+                <div class="popup" id="popup">
+                    <div class="popup-content">
+                        Contenuto del pop-up
+                        <button onclick="togglePopup()">Chiudi</button>
+                    </div>
+                </div>
 
             </div>
             <div class="card">
                 <div class="card__header">
-                    <img src="./bassa/ANGELO_0 39.jpg" alt="card__image" class="card__image" width="600">
+                    <img src="./bassa/ALTA/ANGELO_0.jpg" alt="card__image" class="card__image" width="600">
                 </div>
                 <div class="card__body">
                     <span class="tag">News</span>
@@ -141,11 +214,20 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
                         doloribus. Doloremque, nihil! At ea atque quidem!</p>
                 </div>
+                <button onclick="togglePopup()">Scopri di più</button>
+
+                <!-- Contenuto del pop-up -->
+                <div class="popup" id="popup">
+                    <div class="popup-content">
+                        Contenuto del pop-up
+                        <button onclick="togglePopup()">Chiudi</button>
+                    </div>
+                </div>
 
             </div>
             <div class="card">
                 <div class="card__header">
-                    <img src="./bassa/ANGELO_0 40.jpg" alt="card__image" class="card__image" width="600">
+                    <img src="./bassa/ALTA/hangtags_0-2.jpg" alt="card__image" class="card__image" width="600">
                 </div>
                 <div class="card__body">
                     <span class="tag tag-blue">News</span>
@@ -153,6 +235,16 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
                         doloribus. Doloremque, nihil! At ea atque quidem!</p>
                 </div>
+                <button onclick="togglePopup()">Scopri di più</button>
+
+                <!-- Contenuto del pop-up -->
+                <div class="popup" id="popup">
+                    <div class="popup-content">
+                        Contenuto del pop-up
+                        <button onclick="togglePopup()">Chiudi</button>
+                    </div>
+                </div>
+
 
             </div>
         </div>
@@ -190,7 +282,43 @@
         </div>
         </div>
     </section>
+    <script>
+        function togglePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = (popup.style.display === 'none' || popup.style.display === '') ? 'flex' : 'none';
+        }
+        var slideIndex = 1;
+        showSlides(slideIndex);
 
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        // Auto carousel
+        var slideInterval = setInterval(function () { plusSlides(1) }, 2000);
+
+
+    </script>
 </body>
 
 </html>

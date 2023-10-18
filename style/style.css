@@ -5,7 +5,36 @@
     --secondary: #A6D1E6;
     --bg: #F0F8FF;
     --border: #aaa;
+    --trypan-blue-2: #3a0ca3ff;
+    --flickr-pink: #f72585ff;
+    --byzantine: #b5179eff;
+    --light-pink: #ffc6ff;
+    --text-color: #efefef;
+    --dark-text-color: rgb(44, 44, 44);
+    --delete-color: #df372b;
+    --divider-color: rgba(0, 0, 0, 0.1);
+    --dark-bg: #222;
+    --soft-dark: #272724;
+    /*Scala di Grigi*/
+    --extra-light-gray: #f8f9faff;
+    --soft-light-gray: #f2f2f3;
+    --light-gray: #ced4daff;
+    --primary-gray: #adb5bdff;
+    --soft-dark-gray: #89949e;
+    --dark-gray: #6c757dff;
+    --extra-dark-gray: #343a40ff;
+    /* Global */
+    --letter-spacing: 0.08rem;
+    --transition: all 0.2s ease;
+    --btn-transition: all 0.125s ease;
+    --radius: 0.25rem;
+    --img-radius: 0.25rem 0.25rem 0rem 0rem;
+    --card-radius: 0rem 0rem 0.25rem 0.25rem;
+    --btn-radius: 16px;
+    --light-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 4px 5px 15px rgba(5, 6, 6, 0.4);
 }
+
 
 * {
     box-sizing: border-box;
@@ -13,6 +42,57 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+}
+
+div.head {
+    margin: auto;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    /* Larghezza massima del carosello */
+    margin: 0 auto;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    /* Imposta la larghezza di ogni slide al 100% della larghezza del carosello */
+    transition: transform 0.5s ease;
+    /* Aggiunge un'animazione al passaggio tra le slide */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Stile per il pulsante di apertura del pop-up */
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+
+    border-radius: 1em;
+    font-size: .75rem;
+    background: var(--secondary);
+    color: #fff;
+    margin: 10px;
 }
 
 .top {
@@ -23,6 +103,81 @@
     width: 100%;
     padding: 0 50px;
     font-size: 1.5em;
+}
+
+.hero-img-container {
+    background: url(../bassa/ANGELO_0\ 40.jpg) center center / cover no-repeat;
+
+
+}
+
+.hero-img-container {
+    position: relative;
+    background-position: top;
+    background-size: contain;
+    min-height: 96vh;
+    width: 100%;
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+
+.hero-container {
+    height: 100%;
+}
+
+/*=== HOME HERO ===*/
+
+.home-hero {
+    display: -moz-grid;
+    display: -ms-grid;
+    display: -webkit-grid;
+    display: grid;
+    height: 100%;
+    align-items: center;
+}
+
+.home-hero-text {
+    width: 100%;
+    display: -moz-grid;
+    display: -ms-grid;
+    display: -webkit-grid;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    gap: 2rem;
+    color: var(--text-color);
+}
+
+.home-hero-title {
+    display: -moz-grid;
+    display: -ms-grid;
+    display: -webkit-grid;
+    display: grid;
+    gap: 1rem;
+}
+
+.home-hero-title h1 {
+    font-weight: 900;
+}
+
+
+
+.home-hero-text p {
+    align-self: center;
+    color: var(--light-gray);
+    max-width: 70ch;
+    line-height: 1.6;
 }
 
 
@@ -394,6 +549,48 @@ img {
     cursor: pointer;
     transition: .5s;
 }
+
+#slider {
+    margin: 0 auto;
+    width: 80%;
+    overflow: hidden;
+}
+
+.slides {
+    overflow: hidden;
+    animation-name: fade;
+    animation-duration: 4s;
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+#dot {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    border-radius: 50%;
+    background: #d3d3d3;
+    padding: 8px;
+    margin: 10px 5px;
+}
+
+.active {
+    background: black;
+}
+
+@media (max-width:567px) {
+    #slider {
+        width: 100%;
+
+    }
+}
+
 
 @media(max-width: 911px) {
     .header {
