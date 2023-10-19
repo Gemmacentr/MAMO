@@ -326,6 +326,27 @@ section {
     padding: 40px 30px;
 }
 
+.header {
+    text-align: center;
+}
+
+.descrizione-slider {
+    margin: auto;
+    width: 65%;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.description-cocktail {
+    padding: 40px;
+}
+
+.descrizione-slider p {
+
+    text-align: center;
+}
+
 .shop {
     text-align: center;
 }
@@ -333,8 +354,10 @@ section {
 .shop .titletext {
     text-align: center;
     font-size: 2em;
-    padding-bottom: 40px;
+
 }
+
+
 
 .shop .titletext span {
     color: var(--secondary);
@@ -365,6 +388,21 @@ img {
     box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: 1em;
     background: #fff;
+}
+
+.nested-grid {
+    max-width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+}
+
+.image img {
+    height: auto;
+    max-width: 100%;
+
 }
 
 .card__body {
@@ -582,6 +620,22 @@ img {
 
 .active {
     background: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+span {
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 789px) {
+    .nested-grid {
+
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width:567px) {
