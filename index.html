@@ -3,6 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAMO</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/x-icon" href="/bassa/principale.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.js"
@@ -29,9 +30,9 @@
             <ul class="navigation1">
                 <i class='bx bxs-x-circle close'></i>
                 <li><a href="#banner" class="out">HOME</a></li>
-                <li><a href="#shop" class="out">CATEGORIES</a></li>
-                <li><a href="#about" class="out">ABOUT</a></li>
-                <li><a href="#contacts" class="out">CONTACTS</a></li>
+                <li><a href="#shop" class="out">CATEGORIE</a></li>
+                <li><a href="#about" class="out">ABOUT US</a></li>
+                <li><a href="#contacts" class="out">CONTATTI</a></li>
             </ul>
             </i>
         </div>
@@ -41,9 +42,9 @@
 
         <ul class="navigation">
             <li><a href="#banner" class="out">HOME</a></li>
-            <li><a href="shop" class="out">CATEGORIES</a></li>
-            <li><a href="#about" class="out">ABOUT</a></li>
-            <li><a href="#contacts" class="out">CONTACTS</a></li>
+            <li><a href="#shop" class="out">CATEGORIE</a></li>
+            <li><a href="#about" class="out">ABOUT US</a></li>
+            <li><a href="#contacts" class="out">CONTATTI</a></li>
         </ul>
     </div>
 
@@ -73,170 +74,126 @@
 
     </div>
     <div class="descrizione-slider">
-        <p>Un capo di abbigliamento necessita di accessori per affermare la propria personalità</p>
-
-        <p>Immaginare un capo senza: etichetta, stampa , patch, cartellino;
-            sarebbe un capo totalmente anonimo
-            L'accessorio , quindi , fa la differenza ed esalta il valore del brand
+        <p>Un capo di abbigliamento necessita di accessori per affermare la propria personalità e non essere anonimo.
+        </p>
+        <p> Proponiamo e realizziamo tutto ciò che serve a <b>identificare </b>, <b>esaltare</b> e <b>dare valore</b> al
+            marchio perchè è l'accessorio che fa la differenza.
         </p>
     </div>
 
-    <div id="slider">
-        <div class="slides">
-            <div class="img">
-                <a href="#"><img src="./bassa/ANGELO_0 40.jpg" alt=""></a>
-            </div>
-            <div class="text">
-                <h1>UPCOMING EVENTS</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, minima.</p>
-            </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="imgbx">
-                    <a href="#"><img src="./bassa/ANGELO_0 28.jpg" alt=""></a>
-                </div>
-                <div class="text">
-                    <h1>AVAILABLE JOBS</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, minima.</p>
-                </div>
-            </swiper-slide>
-            </swiper-container>
-        </div>
-    </div>
-    <!--NEWS SECTION-->
+
+
 
     <section class="shop" id="shop">
         <div class="titletext">
-            <h1>CATEGORIES <span>.</span></h1>
+            <h1>CATEGORIE <span>.</span></h1>
         </div>
         <div class="container">
             <div class="card">
+                <h1>Gadgets</h1>
                 <div class="card__header">
-                    <img src="./bassa/ALTA/ANGELO_0-20.jpg" alt="card__image" class="card__image" width="600">
+                    <img src="./bassa/ALTA/Gadget/principale.jpg" alt="card__image" class="card__image" width="600">
                 </div>
-                <div class="card__body">
-                    <span class="tag">News</span>
-                    <h4>Trending Tech Products</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
-                        doloribus. Doloremque, nihil! At ea atque quidem!</p>
-                </div>
-                <button onclick="togglePopup()">Scopri di più</button>
+
+                <button onclick="togglePopup()">
+                    Scopri di più
+                </button>
 
                 <!-- Contenuto del pop-up -->
                 <div class="popup" id="popup">
                     <div class="popup-content">
-                        Contenuto del pop-up
+                        <div class="foto">
+                            <img src="/bassa/ALTA/Gadget/hangtags_0-2.jpg">
+                            <img src="/bassa/ALTA/Gadget/hangtags_0-3.jpg">
+                            <img src="/bassa/ALTA/Gadget/hangtags_0.jpg">
+                            <img src="/bassa/ALTA//Gadget/transfer_0-17.jpg">
+                        </div>
                         <button onclick="togglePopup()">Chiudi</button>
                     </div>
                 </div>
 
             </div>
             <div class="card">
+                <h1>Lacci</h1>
                 <div class="card__header">
-                    <img src="./bassa/ALTA/ANGELO_0-3.jpg" alt="card__image" class="card__image" width="600">
+                    <img src="./bassa/ALTA/Lacci/principale.jpg" alt="card__image" class="card__image" width="600">
                 </div>
-                <div class="card__body">
-                    <span class="tag">News</span>
-                    <h4>Newly Introduced AI Model</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
-                        doloribus. Doloremque, nihil! At ea atque quidem!</p>
-                </div>
-                <button onclick="togglePopup()">Scopri di più</button>
+
+
+                <button onclick="togglePopup1()">Scopri di più</button>
 
                 <!-- Contenuto del pop-up -->
-                <div class="popup" id="popup">
+                <div class="popup" id="popup1">
                     <div class="popup-content">
-                        Contenuto del pop-up
-                        <button onclick="togglePopup()">Chiudi</button>
+                        <div class="foto">
+                            <img src="/bassa/ALTA/Lacci/transfer_0-15.jpg">
+                            <img src="/bassa/ALTA/Lacci/transfer_0-16.jpg">
+
+                        </div>
+
+
+
+
+                        <button onclick="togglePopup1()">Chiudi</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card">
+                <h1>Patches</h1>
+                <div class="card__header">
+                    <img src="./bassa/ALTA/Patches/principale.jpg" alt="card__image" class="card__image" width="600">
+                </div>
+
+                <button onclick="togglePopup2()">Scopri di più</button>
+
+                <!-- Contenuto del pop-up -->
+                <div class="popup" id="popup2">
+                    <div class="popup-content">
+                        <div class="foto">
+                            <img src="/bassa/ALTA/Patches/ANGELO_0-20.jpg">
+                            <img src="/bassa/ALTA/Patches/hangtags_0-6.jpg">
+                            <img src="/bassa/ALTA/Patches/patches.jpg">
+                            <img src="/bassa/ALTA/Patches/patches2.jpg">
+                            <img src="/bassa/ALTA/Patches/patches3.jpg">
+                            <img src="/bassa/ALTA/Patches/transfer_0-22.jpg">
+
+
+                            <img src="/bassa/ALTA/Patches/transfer_0-9.jpg">
+                            <img src="/bassa/ALTA/Patches/transfer_0-8.jpg">
+                            <img src="/bassa/ALTA/Patches/transfer_0-3.jpg">
+                        </div>
+                        <button onclick="togglePopup2()">Chiudi</button>
                     </div>
                 </div>
 
             </div>
             <div class="card">
+                <h1>Transfer</h1>
                 <div class="card__header">
-                    <img src="./bassa/ALTA/ANGELO_0-40.jpg" alt="card__image" class="card__image" width="600">
+                    <img src="./bassa/ALTA/transfer/transfer_0-2.jpg" alt="card__image" class="card__image" width="600">
                 </div>
-                <div class="card__body">
-                    <span class="tag">News</span>
-                    <h4>Recent Trends In IT</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
-                        doloribus. Doloremque, nihil! At ea atque quidem!</p>
-                </div>
-                <button onclick="togglePopup()">Scopri di più</button>
+
+                <button onclick="togglePopup3()">Scopri di più</button>
 
                 <!-- Contenuto del pop-up -->
-                <div class="popup" id="popup">
+                <div class="popup" id="popup3">
                     <div class="popup-content">
-                        Contenuto del pop-up
-                        <button onclick="togglePopup()">Chiudi</button>
+                        <div class="foto">
+                            <img src="/bassa/ALTA/transfer/transfer_0-2.jpg">
+                            <img src="/bassa/ALTA/transfer/transfer_0-26.jpg">
+                            <img src="/bassa/ALTA/transfer/transfer_0-4.jpg">
+
+
+                        </div>
+                        <button onclick="togglePopup3()">Chiudi</button>
                     </div>
                 </div>
 
             </div>
-            <div class="card">
-                <div class="card__header">
-                    <img src="./bassa/ALTA/ANGELO_0-40.jpg" alt="card__image" class="card__image" width="600">
-                </div>
-                <div class="card__body">
-                    <span class="tag">News</span>
-                    <h4>Top Grossing Video Games</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
-                        doloribus. Doloremque, nihil! At ea atque quidem!</p>
-                </div>
-                <button onclick="togglePopup()">Scopri di più</button>
 
-                <!-- Contenuto del pop-up -->
-                <div class="popup" id="popup">
-                    <div class="popup-content">
-                        Contenuto del pop-up
-                        <button onclick="togglePopup()">Chiudi</button>
-                    </div>
-                </div>
-
-            </div>
-            <div class="card">
-                <div class="card__header">
-                    <img src="./bassa/ALTA/ANGELO_0.jpg" alt="card__image" class="card__image" width="600">
-                </div>
-                <div class="card__body">
-                    <span class="tag">News</span>
-                    <h4>Market Crises</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
-                        doloribus. Doloremque, nihil! At ea atque quidem!</p>
-                </div>
-                <button onclick="togglePopup()">Scopri di più</button>
-
-                <!-- Contenuto del pop-up -->
-                <div class="popup" id="popup">
-                    <div class="popup-content">
-                        Contenuto del pop-up
-                        <button onclick="togglePopup()">Chiudi</button>
-                    </div>
-                </div>
-
-            </div>
-            <div class="card">
-                <div class="card__header">
-                    <img src="./bassa/ALTA/hangtags_0-2.jpg" alt="card__image" class="card__image" width="600">
-                </div>
-                <div class="card__body">
-                    <span class="tag tag-blue">News</span>
-                    <h4>What's new in 2022 Tech</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
-                        doloribus. Doloremque, nihil! At ea atque quidem!</p>
-                </div>
-                <button onclick="togglePopup()">Scopri di più</button>
-
-                <!-- Contenuto del pop-up -->
-                <div class="popup" id="popup">
-                    <div class="popup-content">
-                        Contenuto del pop-up
-                        <button onclick="togglePopup()">Chiudi</button>
-                    </div>
-                </div>
-
-
-            </div>
         </div>
     </section>
 
@@ -245,93 +202,107 @@
         <div class="titletext">
             <h1>About <span>.</span></h1>
         </div>
-        <section id="cards" class="cards">
-            <div class="nested-grid">
 
-                <div class="description-cocktail">
-                    <h2>La nostra Missione</h2>
-
-                    <p class="ricetta">Il nostro compito è:<br>ascoltare, elaborare, realizzare. </p>
-
-                </div>
-                <div class="image">
-                    <img class="responsive-image" src="./bassa/ALTA/transfer_0-3.jpg" alt="Immagine">
-                </div>
-            </div>
-        </section>
-        <section id="cards" class="cards">
-            <div class="nested-grid">
-                <div class="image">
-                    <img class="responsive-image" src="./bassa/ALTA/transfer_0-8.jpg" alt="Immagine">
-                </div>
-                <div class="description-cocktail">
-                    <h2>Cosa facciamo</h2>
-
-                    <p class="ricetta">Il nostro servizio è:<br> ricercare , proporre soluzioni con materiali e
-                        tecniche
-                        che possano valorizzare e identificare il marchio.
-                    </p>
-
-                </div>
-            </div>
-        </section>
-        <section id="cards" class="cards">
-            <div class="nested-grid">
-
-                <div class="description-cocktail">
-                    <h2>Come lo facciamo</h2>
-
-                    <p class="ricetta">Il nostro lavoro consiste nel gestire l'intero processo:<br>sviluppo
-                        prototipia,
-                        produzione, consegna, distribuzione sia nel far east che nel resto del mondo.</p>
-
-                    <br>
+        <div class="containerAbout">
 
 
-                    </p>
+            <h2>Il nostro servizio </h2>
 
-                </div>
-                <div class="image">
-                    <img class="responsive-image" src="./bassa/ALTA/transfer_0-1.jpg" alt="Immagine">
-                </div>
-            </div>
-        </section>
-        <section id="cards" class="cards">
-            <div class="nested-grid">
-                <div class="image">
-                    <img class="responsive-image" src="./bassa/ALTA/transfer_0-8.jpg" alt="Immagine">
-                </div>
-                <div class="description-cocktail">
-                    <h2>le nostre Tecniche</h2>
+            <p class="aboutD">Ricercare e proporre soluzioni con materiali e tecniche che possano valorizzare e
+                identificare il
+                marchio. </p>
 
-                    <p class="ricetta">Le tecniche utilizzate dai nostri partner :<br> iniezione, microiniezione,
-                        alta
-                        frequenza, stampa a caldo, stampa ad acqua, tessitura, ricamo , etc.
-                    </p>
-                    <button><a href="https://www.centrocot.it/oeko-tex/standard-100-by-oeko-tex/"> Clicca e
-                            scopri
-                            di più </a></button>
 
-                </div>
-            </div>
-        </section>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+        <div class="containerAbout">
+
+            <h2>Il nostro lavoro</h2>
+            <p class="aboutD"> Coordinare e supervisionare tutte le fasi del
+                processo di sviluppo,
+                prototipazione, produzione, consegna e distribuzione dei prodotti.
+
+                Ci occupiamo sia delle operazioni nel Far East , sia nel resto del mondo.
+            </p>
+
+        </div>
+
+
+
+        <div class="containerAbout">
+            <h2>Il nostro obiettivo</h2>
+
+            <p class="aboutD"> Garantire che i prodotti vengano sviluppati secondo gli
+                standard richiesti e che
+                vengano consegnati in modo tempestivo ai clienti in tutto il mondo.
+
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="containerAbout">
+            <h2>Le tecniche</h2>
+
+            <p class="aboutD">Vengono applicate dai nostri partner e sono : iniezione, microiniezione, alta
+                frequenza,
+                stampa
+                a
+                caldo,
+                stampa ad acqua, tessitura, ricamo utilizzando materiali eco sostenibili e certificati.</p>
+        </div>
+        <div class="containerAbout">
+            <h2>Noi</h2>
+            <p class="aboutD"> Siamo motivati e desiderosi di crescere, sia come azienda che come individui, per poter
+                soddisfare
+                sempre meglio le esigenze dei nostri clienti e rimanere al passo con l'evoluzione del mercato.
+            </p>
+
+        </div>
+
+
+
+
     </section>
     <section class="contacts" id="contacts">
         <div class="titletext">
-            <h1>Contacts<span>.</span></h1>
+            <h1>Contatti<span>.</span></h1>
         </div>
         <div class="form">
             <div class="formimg">
                 <img src="https://images.pexels.com/photos/768474/pexels-photo-768474.jpeg?auto=compress&cs=tinysrgb&w=600"
                     alt="">
             </div>
+            <p>M.A.MO (HK) LIMITED
+
+                UNIT 810, WAYSON COMM BLDG,
+
+                28 CONNAUGHT ROAD WEST,
+
+                SHEUNG WAN, HONG KONG.
+
+                T +852 37002707
+
+                M.+39 3661765882</p>
 
         </div>
         </div>
     </section>
-
     <section class="strip">
-        <h1>Design and code by </h1>
+        <h1>Design and code by Gemma Centrone</h1>
         <div class="icons">
             <a href="https://www.linkedin.com/in/gemma-centrone-831376174/" target="_blank"><i
                     class='bx bxl-linkedin-square'></i></a>
@@ -340,43 +311,67 @@
         </div>
         </div>
     </section>
-    <script>
-        function togglePopup() {
-            var popup = document.getElementById("popup");
-            popup.style.display = (popup.style.display === 'none' || popup.style.display === '') ? 'flex' : 'none';
-        }
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-
-        // Auto carousel
-        var slideInterval = setInterval(function () { plusSlides(1) }, 2000);
-
-
-    </script>
 </body>
+
+
+<script>
+    function togglePopup() {
+        var popup = document.getElementById("popup");
+
+        popup.style.display = (popup.style.display === 'none' || popup.style.display === '') ? 'flex' : 'none';
+
+    }
+    function togglePopup1() {
+        var popup = document.getElementById("popup1");
+
+        popup.style.display = (popup.style.display === 'none' || popup.style.display === '') ? 'flex' : 'none';
+
+    }
+    function togglePopup2() {
+        var popup = document.getElementById("popup2");
+
+        popup.style.display = (popup.style.display === 'none' || popup.style.display === '') ? 'flex' : 'none';
+    }
+    function togglePopup3() {
+        var popup = document.getElementById("popup3");
+
+        popup.style.display = (popup.style.display === 'none' || popup.style.display === '') ? 'flex' : 'none';
+    }
+
+
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+
+    // Auto carousel
+    var slideInterval = setInterval(function () { plusSlides(1) }, 2000);
+
+
+</script>
+
 
 </html>

@@ -1,15 +1,3 @@
-function changeLanguage() {
-    var langSelect = document.getElementById("lingua");
-    var selectedValue = langSelect.options[langSelect.selectedIndex].value;
-
-    if (selectedValue === "italiano") {
-        document.getElementsByClassName("descrizione-slider").innerText = "Un capo di abbigliamento necessita di accessori per affermare la propria personalità";
-
-    } else if (selectedValue === "inglese") {
-        document.getElementsByClassName("descrizione-slider").innerText = "A piece of clothing requires accessories to assert its personality";
-
-    }
-}
 
 $(document).ready(function () {
     $(".on").click(function () {

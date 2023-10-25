@@ -44,8 +44,31 @@
     scroll-behavior: smooth;
 }
 
+body {
+    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
+}
+
+body.noscroll {
+    overflow: hidden !important;
+}
+
 div.head {
     margin: auto;
+}
+
+h2 {
+    border-bottom: 3px solid var(--secondary);
+    ;
+}
+
+h2,
+p.aboutD {
+    display: block;
+    width: 60%;
+    /* Puoi modificare la larghezza in base alle tue esigenze */
+    text-align: center;
 }
 
 .carousel {
@@ -65,22 +88,49 @@ div.head {
 }
 
 .popup {
-    display: none;
+
+
+
     position: fixed;
-    top: 0;
-    left: 0;
+    display: none;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    cursor: pointer;
+
 }
 
+
+
 .popup-content {
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
+    display: block;
+    background-color: white;
+    border-radius: 20px;
+    width: 60vw;
+    height: 80vh;
+    margin: auto;
+    margin-top: 2%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 3%;
+
+
+
 }
+
+
+
+.popup-content img {
+    max-width: 45%;
+    max-height: 45%;
+    margin: 10px;
+}
+
 
 /* Stile per il pulsante di apertura del pop-up */
 button {
@@ -91,7 +141,7 @@ button {
     border-radius: 1em;
     font-size: .75rem;
     background: var(--secondary);
-    color: #fff;
+    color: #ffff;
     margin: 10px;
 }
 
@@ -332,10 +382,9 @@ section {
 
 .descrizione-slider {
     margin: auto;
-    width: 65%;
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    max-width: 60%;
+    padding: 1.5rem;
+
 }
 
 .description-cocktail {
@@ -374,6 +423,19 @@ section {
     padding: 50px 0px;
 }
 
+.containerAbout {
+    display: flex;
+    margin: auto;
+    max-width: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-block: 2rem;
+    gap: 2rem;
+    background: var(--bg);
+    border-radius: 20px;
+    padding: 50px 0px;
+}
+
 img {
     max-width: 100%;
     object-fit: cover;
@@ -383,7 +445,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    width: clamp(30rem, calc(25rem), 22rem);
     overflow: hidden;
     box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: 1em;
@@ -391,10 +453,11 @@ img {
 }
 
 .nested-grid {
-    max-width: 60%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 
 
 }
@@ -405,12 +468,7 @@ img {
 
 }
 
-.card__body {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-}
+
 
 
 .tag {
@@ -459,7 +517,7 @@ img {
 .about .titletext {
     text-align: center;
     font-size: 2em;
-    padding-bottom: 40px;
+
 }
 
 .about .titletext span {
@@ -487,7 +545,7 @@ img {
     align-items: center;
     flex-wrap: wrap;
     gap: 40px;
-    background: var(--secondary);
+    background-color: var(--bg);
     padding: 30px;
     width: 700px;
     margin: auto;
@@ -515,7 +573,7 @@ img {
 }
 
 .strip {
-    background: var(--secondary);
+    background-color: var(--secondary);
     width: 100%;
     height: 10px;
     display: flex;
@@ -631,6 +689,37 @@ span {
     font-weight: bolder;
 }
 
+footer {
+    padding-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    width: 100%;
+    border-top: 1px solid black;
+    position: absolute;
+}
+
+.left,
+.center,
+.right {
+    flex: 1;
+    text-align: center;
+}
+
+
+.right {
+    padding: 10px;
+
+}
+
+.image-logo-footer {
+    width: 10%;
+    margin: 10px 10px;
+    padding: 5px;
+}
+
+
 @media screen and (max-width: 789px) {
     .nested-grid {
 
@@ -659,9 +748,6 @@ span {
         margin: 0 0;
     }
 
-    swiper-slide .imgbx img {
-        height: 100vh;
-    }
 
     .top .search {
         display: flex;
@@ -685,5 +771,26 @@ span {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .containerAbout {
+        max-width: 100%;
+    }
+
+    .descrizione-slider {
+        max-width: 100%;
+    }
+
+    .popup-content {
+        width: 100%;
+        height: 80%;
+        margin-top: 8%;
+    }
+
+    .popup-content img {
+        max-width: 100%;
+        max-height: 45%;
+        padding: 10px;
+        margin: auto;
     }
 }
