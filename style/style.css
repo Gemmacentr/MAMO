@@ -576,7 +576,7 @@ img {
 .strip {
     background-color: var(--secondary);
     width: 100%;
-
+    padding: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -591,7 +591,7 @@ img {
 }
 
 .strip .icons a {
-    color: #fff;
+    color: black;
 }
 
 .alert {
@@ -691,13 +691,13 @@ span {
 }
 
 footer {
-    padding-top: 3.5rem;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 0.8rem;
     width: 100%;
-    border-top: 1px solid black;
+
     position: absolute;
 }
 
