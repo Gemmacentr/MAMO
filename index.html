@@ -5,12 +5,13 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" type="image/x-icon" href="./bassa/principale.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.js"
         integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/ebbc1aa60f.js" crossorigin="anonymous"></script>
     <script src="js/js.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/ebbc1aa60f.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -254,47 +255,6 @@
     </footer>
 </body>
 <script>
-    $(document).ready(function () {
-        $(".on").click(function () {
-            $('.alert').css({
-                'transform': 'translateX(0)',
-            });
-        });
-
-        $(".close").click(function () {
-            $('.alert').css({
-                'transform': 'translateX(150%)',
-            });
-        });
-
-        $(".out").click(function () {
-            $('.alert').css({
-                'transform': 'translateX(150%)',
-            });
-        })
-    })
-
-    $(document).ready(function () {
-        $(".on").click(function () {
-            $('.alert').css({
-                'transform': 'translateX(0)',
-            });
-        });
-
-        $(".close").click(function () {
-            $('.alert').css({
-                'transform': 'translateX(150%)',
-            });
-        });
-
-        $(".out").click(function () {
-            $('.alert').css({
-                'transform': 'translateX(150%)',
-            });
-        })
-    })
-
-
     var slideIndex = 1;
     showSlides(slideIndex);
 
@@ -323,8 +283,7 @@
     }
 
     // Auto carousel
-    var slideInterval = setInterval(function () { plusSlides(1) }, 5000);
-
+    var slideInterval = setInterval(function () { plusSlides(1) }, 3300);
 </script>
 
 </html>

@@ -1,3 +1,7 @@
+
+
+
+
 /* menu*/
 $(document).ready(function () {
     $(".on").click(function () {
@@ -38,6 +42,8 @@ $(document).ready(function () {
         });
     })
 })
+
+
 
 /* slider */
 
