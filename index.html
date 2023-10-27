@@ -49,9 +49,6 @@
     </div>
 
     <div class="slideshow-container">
-
-
-
         <div class="mySlides fade">
             <img src="./bassa/SLIDER/PROMA IMMAGINE.jpg" style="width:100%">
         </div>
@@ -80,10 +77,6 @@
             marchio perchè è l'accessorio che fa la differenza.
         </p>
     </div>
-
-
-
-
     <section class="shop" id="shop">
         <div class="titletext">
             <h1>CATEGORIE <span>.</span></h1>
@@ -98,8 +91,6 @@
                 <button onclick="togglePopup()">
                     Scopri di più
                 </button>
-
-                <!-- Contenuto del pop-up -->
                 <div class="popup" id="popup">
                     <div class="popup-content">
                         <div class="foto">
@@ -121,26 +112,16 @@
 
 
                 <button onclick="togglePopup1()">Scopri di più</button>
-
-                <!-- Contenuto del pop-up -->
                 <div class="popup" id="popup1">
                     <div class="popup-content">
                         <div class="foto">
                             <img src="./bassa/ALTA/Lacci/transfer_0-15.jpg">
                             <img src="./bassa/ALTA/Lacci/transfer_0-16.jpg">
-
                         </div>
-
-
-
-
                         <button onclick="togglePopup1()">Chiudi</button>
                     </div>
                 </div>
             </div>
-
-
-
             <div class="card">
                 <h1>Patches</h1>
                 <div class="card__header">
@@ -148,8 +129,6 @@
                 </div>
 
                 <button onclick="togglePopup2()">Scopri di più</button>
-
-                <!-- Contenuto del pop-up -->
                 <div class="popup" id="popup2">
                     <div class="popup-content">
                         <div class="foto">
@@ -196,68 +175,37 @@
 
         </div>
     </section>
-
-    <!--JOBS SECTION-->
     <section class="about" id="about">
         <div class="titletext">
             <h1>About Us <span>.</span></h1>
         </div>
-
         <div class="containerAbout">
-
-
             <h2>Il nostro servizio </h2>
 
             <p class="aboutD">Ricercare e proporre soluzioni con materiali e tecniche che possano valorizzare e
                 identificare il
                 marchio. </p>
-
-
-
-
-
-
-
-
-
-
-
         </div>
-
-
         <div class="containerAbout">
-
             <h2>Il nostro lavoro</h2>
             <p class="aboutD"> Coordinare e supervisionare tutte le fasi del
                 processo di sviluppo,
                 prototipazione, produzione, consegna e distribuzione dei prodotti.
-
                 Ci occupiamo sia delle operazioni nel Far East , sia nel resto del mondo.
             </p>
-
         </div>
-
-
-
         <div class="containerAbout">
             <h2>Il nostro obiettivo</h2>
 
             <p class="aboutD"> Garantire che i prodotti vengano sviluppati secondo gli
                 standard richiesti e che
                 vengano consegnati in modo tempestivo ai clienti in tutto il mondo.
-
-
             </p>
-
-
         </div>
-
-
-
         <div class="containerAbout">
             <h2>Le tecniche</h2>
 
-            <p class="aboutD">Vengono applicate dai nostri partner e sono : iniezione, microiniezione, alta
+            <p class="aboutD">Iniezione, microiniezione, alta
                 frequenza,
                 stampa
                 a
@@ -266,16 +214,10 @@
         </div>
         <div class="containerAbout">
             <h2>Noi</h2>
-            <p class="aboutD"> Siamo motivati e desiderosi di crescere, sia come azienda che come individui, per poter
-                soddisfare
-                sempre meglio le esigenze dei nostri clienti e rimanere al passo con l'evoluzione del mercato.
+            <p class="aboutD"> Siamo motivati e desiderosi di crescere come azienda e come individui per essere al passo
+                con l'evoluzione del mercato e soddisfare le esigenze dei nostri clienti.
             </p>
-
         </div>
-
-
-
-
     </section>
     <section class="contacts" id="contacts">
         <div class="titletext">
@@ -289,17 +231,12 @@
             <div class="formDescription">
                 <p><b>M.A.MO (HK) LTD </b></p>
                 <p>UNIT 810, WAYSON COMM BLDG </p>
-
                 <p> N.28 CONNAUGHT ROAD WEST</p>
-
-
                 <p>SHEUNG WAN-HONG KONG </p>
-
                 <p> <a href="mailto:Maria@mamohk.com">Maria@mamohk.com</a></p>
                 <p><a href="mailto:Angelo@mamohk.com">Angelo@mamohk.com</a></p>
                 <p><a href="mailto:Sourcing@mamohk.com">Sourcing@mamohk.com</a></p>
             </div>
-
         </div>
         </div>
     </section>
@@ -314,92 +251,5 @@
         </div>
     </footer>
 </body>
-
-
-<script>
-
-
-    function togglePopup() {
-        var popup = document.getElementById("popup");
-
-        popup.style.display = (popup.style.display === 'none' || popup.style.display === '') ? 'flex' : 'none';
-        if (popup.style.display === 'flex') {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "scroll";
-        }
-
-
-    }
-    function togglePopup1() {
-        var popup = document.getElementById("popup1");
-        var body = document.getElementsByTagName('body')
-        popup.style.display = (popup.style.display === 'none' || popup.style.display === '') ? 'flex' : 'none';
-        if (popup.style.display === 'flex') {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "scroll";
-        }
-
-
-    }
-    function togglePopup2() {
-        var popup = document.getElementById("popup2");
-
-        popup.style.display = (popup.style.display === 'none' || popup.style.display === '') ? 'flex' : 'none';
-        if (popup.style.display === 'flex') {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "scroll";
-        }
-
-    }
-    function togglePopup3() {
-        var popup = document.getElementById("popup3");
-
-        popup.style.display = (popup.style.display === 'none' || popup.style.display === '') ? 'flex' : 'none';
-        if (popup.style.display === 'flex') {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "scroll";
-        }
-
-    }
-
-
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-    }
-
-    // Auto carousel
-    var slideInterval = setInterval(function () { plusSlides(1) }, 2000);
-
-
-</script>
-
 
 </html>
