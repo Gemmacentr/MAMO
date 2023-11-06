@@ -1,1 +1,1 @@
-# MAMO
+# MAMO project
