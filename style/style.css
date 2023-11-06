@@ -33,6 +33,7 @@
     --btn-radius: 16px;
     --light-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     --dark-shadow: 4px 5px 15px rgba(5, 6, 6, 0.4);
+    --ricercato: #FFF50E;
 }
 
 
@@ -59,7 +60,7 @@ div.head {
 }
 
 h2 {
-    border-bottom: 3px solid var(--secondary);
+    border-bottom: 3px solid black;
     ;
 }
 
@@ -141,8 +142,8 @@ button {
 
     border-radius: 1em;
     font-size: .75rem;
-    background: var(--secondary);
-    color: #ffff;
+    background: var(--ricercato);
+    color: black;
     margin: 10px;
 }
 
@@ -334,7 +335,7 @@ button {
 }
 
 .header .navigation li a:hover {
-    border-bottom: 2px solid var(--secondary);
+    border-bottom: 2px solid var(--ricercato);
 }
 
 .banner {
@@ -410,7 +411,7 @@ section {
 
 
 .shop .titletext span {
-    color: var(--secondary);
+    color: var(--ricercato);
 }
 
 .container {
@@ -419,7 +420,7 @@ section {
     justify-content: center;
     margin-block: 2rem;
     gap: 2rem;
-    background: var(--bg);
+    background: var(--ricercato);
     border-radius: 20px;
     padding: 50px 0px;
 }
@@ -432,7 +433,7 @@ section {
     justify-content: center;
     margin-block: 2rem;
     gap: 2rem;
-    background: var(--bg);
+    background: var(--ricercato);
     border-radius: 20px;
     padding: 50px 0px;
 }
@@ -507,7 +508,7 @@ img {
 }
 
 .events .titletext span {
-    color: var(--secondary);
+    color: var(--ricercato);
 }
 
 .about {
@@ -522,7 +523,7 @@ img {
 }
 
 .about .titletext span {
-    color: var(--secondary);
+    color: var(--ricercato);
 }
 
 .contacts {
@@ -537,7 +538,7 @@ img {
 }
 
 .contacts .titletext span {
-    color: var(--secondary);
+    color: var(--ricercato);
 }
 
 .form {
@@ -546,7 +547,7 @@ img {
     align-items: center;
     flex-wrap: wrap;
     gap: 40px;
-    background-color: var(--bg);
+    background-color: var(--ricercato);
     padding: 30px;
     width: 700px;
     margin: auto;
@@ -574,7 +575,7 @@ img {
 }
 
 .strip {
-    background-color: var(--secondary);
+    background-color: var(--ricercato);
     width: 100%;
     padding: 0.5rem;
     display: flex;
@@ -601,8 +602,8 @@ img {
     position: fixed;
     top: 5%;
     right: 2%;
-    background: var(--secondary);
-    color: #fff;
+    background: var(--ricercato);
+    color: black;
     font-weight: 800;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     padding: 20px;
@@ -624,7 +625,7 @@ img {
 
 .alert .navigation1 li a {
     text-decoration: none;
-    color: #fff;
+    color: black;
 }
 
 .alert p {
@@ -637,7 +638,7 @@ img {
     justify-content: flex-end;
     font-size: 30px;
     cursor: pointer;
-    color: #fff;
+    color: black;
 }
 
 .register .form .btn {
