@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-sitemap: https://mamohkltd.com/sitemap.xml
