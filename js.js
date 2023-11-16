@@ -1,4 +1,22 @@
 
+// Funzione per impostare un cookie
+function setCookie(name, value, days) {
+    var expires = "";
+
+    // Se il numero di giorni è specificato, calcola la data di scadenza
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+
+    // Imposta il cookie con il nome, il valore e l'opzione di scadenza
+    document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+// Esempio di utilizzo: Imposta un cookie chiamato "username" con il valore "john_doe" valido per 7 giorni
+setCookie("username", "john_doe", 7);
+
 /* menu*/
 $(document).ready(function () {
     $(".on").click(function () {

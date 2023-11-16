@@ -141,10 +141,9 @@ button {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-
+    background-color: #fff;
     border-radius: 1em;
-    font-size: .75rem;
-    background: var(--ricercato);
+    font-size: .95rem;
     color: black;
     margin: 10px;
 }
@@ -422,7 +421,6 @@ section {
     justify-content: center;
     margin-block: 2rem;
     gap: 2rem;
-    background: var(--ricercato);
     border-radius: 20px;
     padding: 50px 0px;
 }
@@ -435,7 +433,6 @@ section {
     justify-content: center;
     margin-block: 2rem;
     gap: 2rem;
-    background: var(--ricercato);
     border-radius: 20px;
     padding: 50px 0px;
 }
@@ -451,8 +448,6 @@ img {
     align-items: center;
     width: clamp(30rem, calc(25rem), 22rem);
     overflow: hidden;
-    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
-    border-radius: 1em;
     background: #fff;
 }
 
@@ -549,7 +544,6 @@ img {
     align-items: center;
     flex-wrap: wrap;
     gap: 40px;
-    background-color: var(--ricercato);
     padding: 30px;
     width: 700px;
     margin: auto;
@@ -577,7 +571,7 @@ img {
 }
 
 .strip {
-    background-color: var(--ricercato);
+    border-top: 2px solid black;
     width: 100%;
     padding: 0.5rem;
     display: flex;
@@ -796,5 +790,13 @@ footer {
         max-height: 45%;
         padding: 10px;
         margin: auto;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
