@@ -7,14 +7,22 @@ Website for **M.A.MO (HK) Ltd**, a company that designs and produces accessories
 
 ## About the project
 
-A real client project: I took care of both the design and the development. The site presents the company, its services and its four product categories, each with a gallery that opens on demand.
+A real client project, from design to publication. The site presents the company, its services and its four product categories, each with a gallery that opens on demand.
 
-The client launched the new website with a [sponsored post on Instagram](https://www.instagram.com/p/DdZCjeEteXP/).
+I took care of the whole process:
+
+- **Design** of the layout and the visual identity of the site
+- **Development** in HTML, CSS and vanilla JavaScript
+- **Publication** on the company's own domain, mamohkltd.com
+- **Search engine indexing:** Google Search Console verification, sitemap and meta tags. The site still shows up as the first Google result when searching for the company.
+
+The site was online as the company's official website from November 2023. Later the client needed to update the content very often, so they moved to a CMS and hired a person to manage it full time. Their current website is [mamolabel.com](https://www.mamolabel.com/); the version I built is still online at the link above.
 
 ## Built with
 
 - HTML
 - CSS
 - JavaScript (vanilla)
+- Google Search Console, XML sitemap
 
 Images are in WebP format to keep the pages light.
